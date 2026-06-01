@@ -1,6 +1,13 @@
 # genomicc-redcap-grouping/.gitignore
 # .gitignore list of files / directories not to upload to git repo
 
+
+# ============================================================
+# Profiles file
+# ============================================================
+codebase/external-params/diagnoses_and_tests_profiles*
+
+
 # ============================================================
 # runs/ - all pipeline outputs, logs, and run-specific params
 # ============================================================

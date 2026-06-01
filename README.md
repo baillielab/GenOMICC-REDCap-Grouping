@@ -18,6 +18,9 @@ The assay_delta is the difference between admission date and date of the test. T
 
 ## Defining a new GWAS phenotype group
 To define a new GWAS phenotype group:
+1. Download the latest `genomicc-redcap-grouping/codebase/external-params/diagnoses_and_tests_profiles_{timestamp}.csv` file as an email attachment
+  - This file will be shared via email only
+  - Save the file into /genomicc-redcap-grouping/codebase/external-params
 1. Open `genomicc-redcap-grouping/codebase/external-params/diagnoses_and_tests_profiles_{timestamp}.csv` (from now on referred to as **the profiles file**)
   - You can either work on this file directly or save a copy to your chosen location
   - In the future I will lock this file to read only but for now whilst we do a first run-through I will leave it as rwx for all
