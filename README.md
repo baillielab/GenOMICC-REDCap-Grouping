@@ -104,21 +104,15 @@ genomicc-redcap-grouping/                          # Git repository root
 │
 ├── codebase/                             # Versioned codebase
 │   │  
-│   ├── external_params/                  # Input file(s) for grouping; output of cleaning pipeline       
-│   │   └── diagnoses_and_tests_profiles_{run_timestamp}.csv
+│   ├── external_params/                  
+│   │   └── diagnoses_and_tests_profiles_{run_timestamp}.csv      # Input file(s) for grouping; output of cleaning pipeline. Only shared via email
 │   │   
 │   ├── scripts/                      
 │   │   ├── functions.R                
 │   │   └── generate-grouping-yaml.R
 │   │    
-│   ├── shared_utilities/
-│   │   ├── dev_bootstrap.R                # Boostrap script for interactive dev
-│   │   ├── shared.env                     # Base dir paths
-│   │   ├── shared-odap.env               # Base dir paths: ODAP
-│   │   └── shared-params.R               # Libraries
-│   │   
-│   └── work/                      
-│       └── ...                           # Output files generated
+│   └── shared_utilities/
+│       └── shared-params.R               # Libraries etc.
 │
 └── runs/                                 # Not versioned
     │
