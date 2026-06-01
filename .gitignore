@@ -1,0 +1,27 @@
+# genomicc-redcap-grouping/.gitignore
+# .gitignore list of files / directories not to upload to git repo
+
+# ============================================================
+# runs/ - all pipeline outputs, logs, and run-specific params
+# ============================================================
+runs/
+
+
+# ============================================================
+# R
+# ============================================================
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+
+# ============================================================
+# OS
+# ============================================================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
