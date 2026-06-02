@@ -30,7 +30,7 @@ GREEN='\033[0;32m'; YELLOW='\033[1;33m'; RED='\033[0;31m'; BLUE='\033[0;34m'; NC
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CODEBASE="$REPO_ROOT/codebase"
 R_SCRIPT="$CODEBASE/scripts/generate-grouping-yaml.R"
-PARAMS_DIR="$CODEBASE/external_params"
+PARAMS_DIR="$CODEBASE/external-params"
 RUNS_DIR="$REPO_ROOT/runs"
 
 
@@ -46,12 +46,12 @@ usage() {
   echo "Options:"
   echo "  -i, --input <path>   Path to input CSV file"
   echo "                       Default: newest diagnoses_and_tests_profiles_*.csv"
-  echo "                       in codebase/external_params/"
+  echo "                       in codebase/external-params/"
   echo "  -h, --help           Show this help message"
   echo ""
   echo "Examples:"
   echo "  ./grouping-yaml-launcher.sh"
-  echo "  ./grouping-yaml-launcher.sh -i codebase/external_params/diagnoses_and_tests_profiles_20260601.csv"
+  echo "  ./grouping-yaml-launcher.sh -i codebase/external-params/diagnoses_and_tests_profiles_20260601.csv"
   echo ""
 }
 
