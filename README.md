@@ -30,6 +30,14 @@ phenotype_groups:
 - One GWAS phenotype group per yaml for the development phase (individual yamls will be combined programatically in ODAP for application to the individual-level data)
 - Profiles that fit any of the first-level conditions (e.g. prim_diagnosis_odap + assays) will be assigned to the group
   - In the arbitrary example above, profiles that fit any of the three conditions will be assigned to the test_pheno group
+
+| yaml value | Meaning | Behaviour |
+| ------ | ------ | ------ |
+|   ~     |   field is absent/unknown    |    only matches rows where that column is `NA`    |
+|    `ANY`    |        |    matches any row regardless of value    |
+|    assay_delta: 4    |   specific value     |    exact match only    |
+
+
 - When an assay delta is not specified (~), any value for delta will result in inclusion into the group
   - In the arbitrary example yaml above that would mean any profile with `prim_diagnosis_odap == Acute pneumonia complicating confirmed infection with influenza virus` and a `blood_culture` assay detecting `COVID-19` for any `assay_delta`
 - When an assay delta is specified, only profiles with an exact match to all the elements of the condition will be included

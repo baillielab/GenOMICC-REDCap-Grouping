@@ -132,5 +132,21 @@ for (phenotype_col in phenotype_cols) {
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 out_file <- file.path(OUTPUT_DIR, paste0(PHENOTYPE_NAME, "-groups.yaml"))
 
-write_yaml(list(phenotype_groups = all_groups), out_file)
+yaml_str <- as.yaml(list(phenotype_groups = all_groups))
+
+collapse_delta_lists <- function(yaml_str) {
+  pattern <- "assay_delta:\n(?:[ \t]+-\\s*-?[0-9]+\n)+"
+  repeat {
+    m <- regexpr(pattern, yaml_str, perl = TRUE)
+    if (m == -1) break
+    block <- regmatches(yaml_str, m)
+    vals  <- regmatches(block, gregexpr("-?[0-9]+", block))[[1]]
+    inline <- paste0("assay_delta: [", paste(vals, collapse = ", "), "]\n")
+    regmatches(yaml_str, m) <- inline
+  }
+  yaml_str
+}
+yaml_str <- collapse_delta_lists(yaml_str)
+
+writeLines(yaml_str, out_file)
 message("Written: ", out_file)
