@@ -97,7 +97,7 @@ Please note that this work is still under development; reports of errors etc. wo
 ```
 genomicc-redcap-grouping/                          # Git repository root
 │
-├── grouping-yaml-launcher.sh                      # Run from terminal to generate grouping yaml from profiles csv file
+├── gwas-phenotype-grouping-launcher.sh            # Main running script; see help for details
 ├── genomicc-redcap-grouping.Rproj
 ├── .git
 ├── .gitignore
@@ -108,23 +108,30 @@ genomicc-redcap-grouping/                          # Git repository root
 │   │   └── diagnoses_and_tests_profiles_{run_timestamp}.csv      # Input file(s) for grouping; output of cleaning pipeline. Only shared via email
 │   │   
 │   ├── scripts/                      
-│   │   ├── functions.R                
-│   │   └── generate-grouping-yaml.R
+│   │   ├── functions.R
+│   │   ├── apply-grouping-yaml.R         # Apply a yaml to a profiles file; one phenotype at a time                   
+│   │   └── generate-grouping-yaml.R      # Generate a yaml from an edited profiles file; one phenotype at a time
 │   │    
 │   └── shared_utilities/
 │       └── shared-params.R               # Libraries etc.
 │
 └── runs/                                 # Not versioned
     │
-    ├── genommic-redcap-grouping_20260430_114647/            # Run dir [YYYYMMDD_HHMMSS]
-    │   ├── params/                       # Params input file copied in by run script to keep record specific to each run
-    │   │   └── diagnoses_and_tests_profiles_{run_timestamp}.csv
+    ├── genommic-redcap-grouping_{phenotype_name}/            # Run dir per phenotype
     │   │
+    │   ├── params/                       
+    │   │   └── diagnoses_and_tests_profiles_{run_timestamp}.csv  # Copied in from external_params once when run is started
+    │   │
+    │   ├── work/
+    │   │   ├── gwas-grouped-phenotypes.yaml                      # editable, overwritten each iteration                     
+    │   │   └── diagnoses_and_tests_profiles_with_phenotypes.csv  # editable, overwritten each iteration
+    │   │ 
     │   ├── logs/
-    │   │   └── generate-grouping-yaml-{run_timestamp}.log
+    │   │   └── gwas-phenotype-grouping.log          # All activity across iterations appended with timestamps
     │   │
-    │   ├── output/
-    │   │   └── gwas-grouped-phenotypes-{run_timestamp}.csv
+    │   ├── output/           # populated only on running with --finalise
+    │   │   ├── gwas-grouped-phenotypes.yaml                     
+    │   │   └── diagnoses_and_tests_profiles_with_phenotypes.csv
     │   │
     │   └── git_commit.txt                  # Version of pipeline used in run; will show e.g. v1.0.0-dirty if ran with uncommitted 
     │

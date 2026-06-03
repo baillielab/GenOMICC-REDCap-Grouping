@@ -1,8 +1,8 @@
 # =============================================================================
 # genomicc-redcap-grouping/codebase/scripts/generate-grouping-yaml.R
-# Generates a single phenotype_groupings_YYYYMMDD.yaml from a profiles csv file
-# Called by grouping-yaml-launcher.sh; can also be run interactively via
-# codebase/shared_utilities/dev_bootstrap.R (NOT YET FUNCTIONAL)
+# Generates a gwas-grouped-phenotypes.yaml from a profiles csv file annotated 
+# with a single phenotypes column (will error out if more than one phenotype col is present)
+# Called by gwas-phenotype-grouping-launcher.sh
 # =============================================================================
 
 
@@ -18,22 +18,23 @@ get_arg <- function(flag, default = NULL) {
   if (length(idx) > 0) args[idx + 1] else default
 }
 
-INPUT_FILE  <- get_arg("--input")
-OUTPUT_DIR  <- get_arg("--output")
-CODEBASE    <- get_arg("--codebase")
-FIXED_COLS  <- 6
+INPUT_FILE     <- get_arg("--input")
+OUTPUT_DIR     <- get_arg("--output")
+CODEBASE       <- get_arg("--codebase")
+PHENOTYPE_NAME <- get_arg("--name")
 
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## Pre-run Checks ####
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-if (is.null(INPUT_FILE) || is.null(OUTPUT_DIR)) {
-  stop("--input and --output are required arguments.")
+if (is.null(INPUT_FILE) || is.null(OUTPUT_DIR) || is.null(PHENOTYPE_NAME)) {
+  stop("--input, --output, and --name are required arguments.")
 }
 
 message("Input  : ", INPUT_FILE)
 message("Output : ", OUTPUT_DIR)
+message("Name   : ", PHENOTYPE_NAME)
 
 
 
@@ -69,11 +70,29 @@ for (lib in libs_required) {
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 df <- read_csv(INPUT_FILE, na = c("", "NA"), show_col_types = FALSE)
 
-fixed_cols     <- names(df)[1:FIXED_COLS]
-phenotype_cols <- names(df)[(FIXED_COLS + 1):ncol(df)]
+# Validate that all expected fixed columns are present
+missing_fixed <- setdiff(FIXED_PROFILE_COLS, names(df))
+if (length(missing_fixed) > 0) {
+  stop("Input file is missing expected fixed columns: ",
+       paste(missing_fixed, collapse = ", "))
+}
 
-message("Fixed columns    : ", paste(fixed_cols, collapse = ", "))
+# Identify phenotype columns: anything beyond the fixed cols,
+# dropping any empty/NA column names from ragged CSVs
+phenotype_cols <- setdiff(names(df), FIXED_PROFILE_COLS)
+phenotype_cols <- phenotype_cols[!is.na(phenotype_cols) & nchar(trimws(phenotype_cols)) > 0]
+
+message("Fixed columns    : ", paste(FIXED_PROFILE_COLS, collapse = ", "))
 message("Phenotype columns: ", paste(phenotype_cols, collapse = ", "))
+
+if (length(phenotype_cols) == 0) {
+  stop("No phenotype columns found. Add at least one phenotype column to the profiles file.")
+}
+
+if (length(phenotype_cols) > 1) {
+  stop("Multiple phenotype columns found: ", paste(phenotype_cols, collapse = ", "),
+       "\nPlease run --generate separately for each phenotype column.")
+}
 
 
 
@@ -111,8 +130,7 @@ for (phenotype_col in phenotype_cols) {
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## Write Output ####
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-timestamp <- format(Sys.time(), "%Y%m%d_%H%M%S")
-out_file    <- file.path(OUTPUT_DIR, paste0("gwas-grouped-phenotypes-", timestamp, ".yaml"))
+out_file <- file.path(OUTPUT_DIR, paste0(PHENOTYPE_NAME, "-groups.yaml"))
 
 write_yaml(list(phenotype_groups = all_groups), out_file)
 message("Written: ", out_file)
