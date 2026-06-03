@@ -110,11 +110,18 @@ for (pg in config$phenotype_groups) {
   total_col <- paste0(pheno_col, "_total_px")
 
   profiles[[pheno_col]] <- NA_character_
-  profiles[[total_col]] <- NA_integer_
+  profiles[[total_col]] <- NA_real_
 
   for (pnum in unique(profiles$profile_number)) {
     idx          <- which(profiles$profile_number == pnum)
     profile_rows <- profiles[idx, ]
+
+    # Skip profiles with any null prim_diagnosis_odap — should not occur in
+    # clean data but guards against unexpected input
+    if (any(is.na(profile_rows$prim_diagnosis_odap))) {
+      warning("Profile ", pnum, " has NA prim_diagnosis_odap — skipping")
+      next
+    }
 
     label <- get_phenotype_label(profile_rows, pg)
 
@@ -129,10 +136,13 @@ for (pg in config$phenotype_groups) {
     profiles$profile_number[!is.na(profiles[[pheno_col]])]
   )
   total_px <- sum(
-    sapply(matched_profiles, function(pnum) {
+    vapply(matched_profiles, function(pnum) {             
       px_rows <- profiles$number_px_with_profile[profiles$profile_number == pnum]
-      px_rows[!is.na(px_rows)][1]
-    })
+      val <- px_rows[!is.na(px_rows)][1]
+      if (length(val) == 0 || is.na(val)) NA_integer_
+      else as.integer(val)
+    }, integer(1)),
+    na.rm = TRUE
   )
   profiles[[total_col]][!is.na(profiles[[pheno_col]])] <- total_px
 

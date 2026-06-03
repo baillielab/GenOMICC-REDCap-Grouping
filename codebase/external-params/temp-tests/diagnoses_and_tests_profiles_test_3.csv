@@ -1,0 +1,19 @@
+profile_number,number_px_with_profile,prim_diagnosis_odap,assay_type,organism,assay_delta,test_profile
+1,14339,COVID-19,NA,NA,NA,
+2,3373,Pneumonia with radiographic changes at presentation to critical care,NA,NA,NA,
+3,1527,Pancreatitis of any aetiology,NA,NA,NA,
+4,802,COVID-19,throatnose_swab,COVID-19,0,
+5,627,Soft tissue infections causing systemic sepsis,NA,NA,NA,
+6,441,Preterm birth < 32 weeks postmenstrual age,NA,NA,NA,
+7,411,Influenza,NA,NA,NA,
+8,324,Suspected COVID-19,NA,NA,NA,
+9,262,COVID-19,throatnose_swab,COVID-19,-1,test
+9,262,COVID-19,blood_culture,COVID-19,NA,test
+10,253,Acute pneumonia complicating confirmed infection with influenza virus,NA,NA,NA,test
+11,230,UTI/Urosepsis,NA,NA,NA,
+12,178,Influenza,throatnose_swab,Influenza A,0,
+13,170,Respiratory syncytial virus,throatnose_swab,Respiratory syncitial virus,0,
+14,166,Respiratory syncytial virus,NA,NA,NA,
+15,149,COVID-19,throatnose_swab,COVID-19,1,
+16,115,Peritonitis,NA,NA,NA,
+17,104,COVID-19,throatnose_swab,COVID-19,-2,
