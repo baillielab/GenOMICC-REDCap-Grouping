@@ -5,6 +5,7 @@
 # Unified launcher for the GWAS phenotype grouping workflow.
 #
 # Supports two operations, which can be used independently or together:
+#   --dry-run    Set up the run directory and copy the profiles csv (no R scripts run)
 #   --generate   Generate a grouping yaml FROM a profiles csv (path 2b)
 #   --apply      Apply a grouping yaml TO a profiles csv    (path 3)
 #   --finalise   Copy the yaml and output profiles csv to output/
@@ -13,6 +14,7 @@
 # user can return to a previous session by re-using the same name.
 #
 # Usage:
+#   ./gwas-phenotype-grouping-launcher.sh -n <name> --dry-run
 #   ./gwas-phenotype-grouping-launcher.sh -n <name> --apply
 #   ./gwas-phenotype-grouping-launcher.sh -n <name> --generate
 #   ./gwas-phenotype-grouping-launcher.sh -n <name> --generate --apply
@@ -57,6 +59,10 @@ usage() {
   echo "                       Re-using the same name resumes a previous session."
   echo ""
   echo "Operations (at least one required):"
+  echo "  --dry-run            Set up the run directory and copy the profiles csv."
+  echo "                       Checks R and packages. Exits before running any R scripts."
+  echo "                       Use to prepare a session for --apply without --generate."
+  echo "                       Error if the run directory already exists."
   echo "  --generate           Generate a grouping yaml from a profiles csv."
   echo "                       Output: runs/genomicc-redcap-grouping_<name>/work/"
   echo "  --apply              Apply a grouping yaml to a profiles csv."
@@ -73,6 +79,7 @@ usage() {
   echo "  -h, --help           Show this help message"
   echo ""
   echo "Examples:"
+  echo "  ./gwas-phenotype-grouping-launcher.sh -n covid19 --dry-run"
   echo "  ./gwas-phenotype-grouping-launcher.sh -n covid19 --apply"
   echo "  ./gwas-phenotype-grouping-launcher.sh -n covid19 --generate --apply"
   echo "  ./gwas-phenotype-grouping-launcher.sh -n covid19 -y my-custom.yaml --apply --finalise"
@@ -89,6 +96,7 @@ usage() {
 PHENOTYPE_NAME=""
 INPUT_FILE_ARG=""
 YAML_FILE_ARG=""
+DO_DRY_RUN=false
 DO_GENERATE=false
 DO_APPLY=false
 DO_FINALISE=false
@@ -106,6 +114,10 @@ while [[ $# -gt 0 ]]; do
     -y|--yaml)
       YAML_FILE_ARG="$2"
       shift 2
+      ;;
+    --dry-run)
+      DO_DRY_RUN=true
+      shift
       ;;
     --generate)
       DO_GENERATE=true
@@ -139,8 +151,8 @@ done
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### At least one operation required ====
-if ! $DO_GENERATE && ! $DO_APPLY && ! $DO_FINALISE; then
-  echo -e "${RED}Error: no operation specified. Use --generate, --apply, and/or --finalise.${NC}"
+if ! $DO_DRY_RUN && ! $DO_GENERATE && ! $DO_APPLY && ! $DO_FINALISE; then
+  echo -e "${RED}Error: no operation specified. Use --dry-run, --generate, --apply, and/or --finalise.${NC}"
   usage
   exit 1
 fi
@@ -193,6 +205,11 @@ OUTPUT_DIR="$RUN_DIR/output"
 LOG_FILE="$LOGS_DIR/gwas-phenotype-grouping.log"
 
 if [ -d "$RUN_DIR" ]; then
+  if $DO_DRY_RUN; then
+    echo -e "${RED}Error: --dry-run requires a new session, but run directory already exists: $RUN_DIR${NC}"
+    echo -e "${YELLOW}Tip: use a different -n name, or run --apply directly to resume this session.${NC}"
+    exit 1
+  fi
   echo -e "${BLUE}Resuming session: $RUN_DIR${NC}"
 else
   echo -e "${BLUE}Creating new session: $RUN_DIR${NC}"
@@ -205,7 +222,7 @@ RUN_TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
   echo ""
   echo "============================================================"
   echo "Run: $RUN_TIMESTAMP"
-  echo "Operations:$(  $DO_GENERATE && echo ' --generate')$(  $DO_APPLY && echo ' --apply')$(  $DO_FINALISE && echo ' --finalise')"
+  echo "Operations:$(  $DO_DRY_RUN && echo ' --dry-run')$(  $DO_GENERATE && echo ' --generate')$(  $DO_APPLY && echo ' --apply')$(  $DO_FINALISE && echo ' --finalise')"
   echo "============================================================"
 } >> "$LOG_FILE"
 
@@ -291,6 +308,23 @@ else
 fi
 
 echo "Input file: $INPUT_FILE" >> "$LOG_FILE"
+
+
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## --dry-run ####
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+if $DO_DRY_RUN; then
+  echo "dry-run: setup complete" >> "$LOG_FILE"
+  echo -e "${GREEN}--dry-run complete.${NC}"
+  echo -e "${GREEN}  Run directory : $RUN_DIR${NC}"
+  echo -e "${GREEN}  Profiles csv  : $PARAMS_RUN_DIR/$(basename "$INPUT_FILE")${NC}"
+  echo -e "${GREEN}  Log           : $LOG_FILE${NC}"
+  echo -e "${BLUE}You can now place a yaml in $WORK_DIR/ and run --apply to continue.${NC}"
+  echo -e "${GREEN}Done. Log: $LOG_FILE${NC}"
+  exit 0
+fi
 
 
 
@@ -411,8 +445,8 @@ if $DO_FINALISE; then
 
   ### Copy yaml and output profiles csv to output/ ====
   FINALISE_TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
-  FINAL_YAML="$OUTPUT_DIR/gwas-grouped-phenotypes-${FINALISE_TIMESTAMP}.yaml"
-  FINAL_PROFILES="$OUTPUT_DIR/diagnoses_and_tests_profiles_with_phenotypes-${FINALISE_TIMESTAMP}.csv"
+  FINAL_YAML="$OUTPUT_DIR/${PHENOTYPE_NAME}_gwas_grouped_phenotypes-${FINALISE_TIMESTAMP}.yaml"
+  FINAL_PROFILES="$OUTPUT_DIR/diagnoses_and_tests_profiles_with_phenotypes_${PHENOTYPE_NAME}-${FINALISE_TIMESTAMP}.csv"
 
   cp "$YAML_FILE" "$FINAL_YAML"
   cp "$WORK_DIR/diagnoses_and_tests_profiles_with_phenotypes.csv" "$FINAL_PROFILES"
