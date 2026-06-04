@@ -3,7 +3,9 @@
 R-based workflow that facilitates GWAS phenotype grouping.
 
 ## yaml logic
-LINK TO Grouping_yaml_logic.md
+[gitlab wiki page](https://git.ecdf.ed.ac.uk/dmccormick/odap-data-engineering-pipelines/genomicc-redcap-grouping/-/wikis/home/Grouping_yaml_logic)
+
+[github wiki page](https://github.com/baillielab/GenOMICC-REDCap-Grouping/wiki/Grouping-yaml-logic)
 
 ---
 
