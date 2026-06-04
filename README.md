@@ -37,14 +37,14 @@ This will:
 
 2. Create a yaml manually
 - Copy one of the current working library of yamls from `genomicc-redcap-grouping/codebase/yaml-library` to `genomicc-redcap-grouping/runs/genomicc-redcap-grouping_<name>/work`
-- Rename this yaml <name>-groups.yaml
+- Rename this yaml `<name>-groups.yaml`
 - Make your edits and save
 
 3. To see what effect applying the GWAS phenotype grouping yaml has, it can be applied to the profiles file with:
 ```
 ./gwas-phenotype-grouping-launcher.sh -n <name> --apply
 ```
-- Where <name> is the name of the GWAS phenotype grouping
+- Where `<name>` is the name of the GWAS phenotype grouping
 - Use quotation marks around the name if the name contains spaces or non-standard characters
 - Optional: Specify the yaml file with option -y (call --help for details). If not specified, the most recent yaml in `genomicc-redcap-grouping/runs/genomicc-redcap-grouping_<name>/work/` will be used.
 - This command applies the grouping logic to the profiles file in work and creates a new file `work/diagnoses_and_tests_profiles_with_phenotypes.csv`.
@@ -68,9 +68,9 @@ This will:
 - Check for R and R packages
 - Create a log entry
 
-2. Add your <name> value to the first row of the first available column in the  `genomicc-redcap-grouping/runs/work/diagnoses_and_tests_profiles_{run_timestamp}.csv` file.
+2. Add your `<name>` value to the first row of the first available column in the  `genomicc-redcap-grouping/runs/work/diagnoses_and_tests_profiles_{run_timestamp}.csv` file.
 
-3. Add consistent values in the newly created <name> column in the `genomicc-redcap-grouping/runs/work/diagnoses_and_tests_profiles_{run_timestamp}.cs` file for every profile that meets the conditions for inclusion into the GWAS phenotype group you are creating.
+3. Add consistent values in the newly created `<name>` column in the `genomicc-redcap-grouping/runs/work/diagnoses_and_tests_profiles_{run_timestamp}.cs` file for every profile that meets the conditions for inclusion into the GWAS phenotype group you are creating.
 
 4. Save the file.
 
@@ -78,7 +78,7 @@ This will:
 ```
 ./gwas-phenotype-grouping-launcher.sh -n <name> --generate
 ```
-- Where <name> is the name of the GWAS phenotype grouping
+- Where `<name>` is the name of the GWAS phenotype grouping
 - Use quotation marks around the name if the name contains spaces or non-standard characters
 - Optional: Specify the input file with option -i (call --help for details). If not specified, the most recent profiles csv file in `genomicc-redcap-grouping/runs/genomicc-redcap-grouping_<name>/work/` will be used.
 
@@ -86,7 +86,7 @@ This will:
 ```
 ./gwas-phenotype-grouping-launcher.sh -n <name> --apply
 ```
-- Where <name> is the name of the GWAS phenotype grouping
+- Where `<name>` is the name of the GWAS phenotype grouping
 - Use quotation marks around the name if the name contains spaces or non-standard characters
 - Optional: Specify the yaml file with option -y (call --help for details). If not specified, the most recent yaml in `genomicc-redcap-grouping/runs/genomicc-redcap-grouping_<name>/work/` will be used.
 - This command applies the grouping logic to the profiles file in work and creates a new file `work/diagnoses_and_tests_profiles_with_phenotypes.csv`.
@@ -109,7 +109,7 @@ Once you are happy with your yaml you can finalise the output with:
 ```
 ./gwas-phenotype-grouping-launcher.sh -n <name> --finalise
 ```
-- Where <name> is the name of the GWAS phenotype grouping
+- Where `<name>` is the name of the GWAS phenotype grouping
 - This will copy the profiles and yaml files in `work` into `output` as `diagnoses_and_tests_profiles_with_phenotypes_<name>-{timestamp}.csv` and `<name>_gwas_grouped_phenotypes-{timestamp}.yaml`
 
 ---
