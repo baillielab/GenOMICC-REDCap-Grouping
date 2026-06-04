@@ -123,16 +123,21 @@ build_profiles <- function(label_df) {
 # Match a single assay spec from YAML against a data row.
 # Returns TRUE if the row satisfies all non-null fields in the spec.
 match_assay_row <- function(row, assay_spec) {
-  # Three-way semantics for each field:
-  #   NULL / NA  -> require the data value to be NA  (field is absent/unknown)
-  #   "ANY"      -> wildcard, skip this check entirely
-  #   <value>    -> exact match required
+  # Matching semantics for assay_type and organism:
+  #   NULL / NA        -> require the data value to be NA  (field is absent/unknown)
+  #   "ANY"            -> wildcard, skip this check entirely
+  #   [v1, v2, ...]    -> value-set: match if data value is any of the listed values
+  #   <scalar>         -> exact match required
 
   # assay_type
   if (identical(assay_spec$assay_type, "ANY")) {
     # wildcard - always passes
-  } else if (is.null(assay_spec$assay_type) || is.na(assay_spec$assay_type)) {
+  } else if (is.null(assay_spec$assay_type) || (length(assay_spec$assay_type) == 1 && is.na(assay_spec$assay_type))) {
     if (!is.na(row$assay_type)) return(FALSE)
+  } else if (length(assay_spec$assay_type) > 1 || is.list(assay_spec$assay_type)) {
+    # Value-set: match if row value is any of the listed values
+    allowed <- as.character(unlist(assay_spec$assay_type))
+    if (is.na(row$assay_type) || !row$assay_type %in% allowed) return(FALSE)
   } else {
     if (is.na(row$assay_type) || row$assay_type != assay_spec$assay_type) return(FALSE)
   }
@@ -140,8 +145,12 @@ match_assay_row <- function(row, assay_spec) {
   # organism
   if (identical(assay_spec$organism, "ANY")) {
     # wildcard - always passes
-  } else if (is.null(assay_spec$organism) || is.na(assay_spec$organism)) {
+  } else if (is.null(assay_spec$organism) || (length(assay_spec$organism) == 1 && is.na(assay_spec$organism))) {
     if (!is.na(row$organism)) return(FALSE)
+  } else if (length(assay_spec$organism) > 1 || is.list(assay_spec$organism)) {
+    # Value-set: match if row value is any of the listed values
+    allowed <- as.character(unlist(assay_spec$organism))
+    if (is.na(row$organism) || !row$organism %in% allowed) return(FALSE)
   } else {
     if (is.na(row$organism) || row$organism != assay_spec$organism) return(FALSE)
   }
@@ -186,9 +195,11 @@ match_assay_row <- function(row, assay_spec) {
 ## match_profile_entry ####
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Checks whether a profile (subset of rows sharing a profile_number) matches a
-# single YAML profile entry (one element of phenotype_group$profiles)
-# Returns TRUE if ALL assay specs in the entry are satisfied by at least one row
-# in the profile, AND prim_diagnosis_odap matches.
+# single YAML case definition (one element of phenotype_group$case_definitions).
+# Returns TRUE if:
+#   - prim_diagnosis_odap matches, AND
+#   - ALL assay specs in entry$assays are satisfied by at least one profile row, AND
+#   - NO row in the profile satisfies any spec in entry$exclude (if present).
 match_profile_entry <- function(profile_rows, entry) {
 
   # Check prim_diagnosis_odap (required)
@@ -218,6 +229,21 @@ match_profile_entry <- function(profile_rows, entry) {
     if (!matched) return(FALSE)
   }
 
+  # Exclude logic: if any exclude spec is matched by at least one row, reject
+  # the profile. Uses the same field matching semantics as assay specs.
+  excludes <- entry$exclude
+  if (!is.null(excludes)) {
+    for (excl_spec in excludes) {
+      if (is.null(excl_spec)) next  # skip bare ~ entries
+
+      excluded <- any(vapply(seq_len(nrow(profile_rows)), function(i) {
+        match_assay_row(as.list(profile_rows[i, ]), excl_spec)
+      }, logical(1)))
+
+      if (excluded) return(FALSE)
+    }
+  }
+
   TRUE
 }
 
@@ -230,7 +256,7 @@ match_profile_entry <- function(profile_rows, entry) {
 # For a given phenotype group, return the label if the profile matches any entry
 # (OR logic across entries), otherwise NA.
 get_phenotype_label <- function(profile_rows, phenotype_group) {
-  for (entry in phenotype_group$profiles) {
+  for (entry in phenotype_group$case_definitions) {
     if (match_profile_entry(profile_rows, entry)) {
       return(phenotype_group$phenotype_label)
     }

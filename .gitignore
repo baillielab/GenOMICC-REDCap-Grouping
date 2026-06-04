@@ -9,6 +9,12 @@ codebase/external-params/diagnoses_and_tests_profiles*
 
 
 # ============================================================
+# GitLab wiki (separate git repository)
+# ============================================================
+genomicc-redcap-grouping.wiki/
+
+
+# ============================================================
 # runs/ - all pipeline outputs, logs, and run-specific params
 # ============================================================
 runs/

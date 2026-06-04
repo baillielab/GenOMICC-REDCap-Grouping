@@ -1,0 +1,4633 @@
+phenotype_groups:
+- phenotype_column: covid19
+  phenotype_label: covid19
+  profiles:
+  - prim_diagnosis_odap: COVID-19
+    assays: ~
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [-9, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 6, 9]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-9, -7, -5, -4, -2, -1, 0, 1, 2, 6]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1, 3, 4]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0, 4]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-7, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 10]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-8, -4, -1, 0, 1, 3]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [0, 1, 3, 8]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: resp pcr negative
+      assay_delta: [0, 1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1, 2, 5]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [0, 1, 2, 3, 5]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1, 0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1, 3, 4]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [0, 1, 3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: negative multi resistant organism screen
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2, 0, 1, 3]
+    - assay_type: throatnose_swab
+      organism: resistant organism negative
+      assay_delta: [-2, 0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: negative for legionella and pneumococcal antigen
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-3, 0, 1]
+    - assay_type: urine_culture
+      organism: Candida albicans
+      assay_delta: [0, 1, 4]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1, 0, 1]
+    - assay_type: urine_culture
+      organism: Escherichia coli
+      assay_delta: [-1, 0, 1, 3, 6]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: Influenza A
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: COVID-19
+      assay_delta: [0, 1, 2, 7]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1, 0, 1, 4, 5]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Escherichia coli
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Staphylococcus aureus
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: Legionella pneumophila
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 3]
+    - assay_type: throatnose_swab
+      organism: resistant organism negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: respiratory pcr negative
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: respiratory pcr negative
+      assay_delta: [0, 1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resp pcr- negative
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resp pcr negative
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Escherichia coli
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-3, -2, 0, 1]
+    - assay_type: tracheal_aspirate
+      organism: Klebsiella pneumoniae
+      assay_delta: [0, 3, 8]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2, 0]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [0, 3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: pseudomonas aeruginosa
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-7, -6, -1, 0, 1]
+    - assay_type: urinary_antigen_test
+      organism: antigen not detected
+      assay_delta: [-1, 0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: mrsa not isolated
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: COVID-19
+      assay_delta: [-3, 0]
+    - assay_type: minibal
+      organism: COVID-19
+      assay_delta: [-3, 0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-3, 0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: blood_culture
+      organism: Chlamydia pneumoniae
+      assay_delta: [0]
+    - assay_type: cerebrospinal_fluid
+      organism: Streptococci (other)
+      assay_delta: [0]
+    - assay_type: csf_nonculture_diagnostics
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: minibal
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: csf_nonculture_diagnostics
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: minibal
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: minibal
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-5]
+    - assay_type: tracheal_aspirate
+      organism: sputum - stenotrophomonas maltophilia
+      assay_delta: [-5]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: minibal
+      organism: klebsiella oxytoca and escherichia coli
+      assay_delta: [5]
+    - assay_type: minibal
+      organism: enterobacter cloacae and klebsiella oxytoca
+      assay_delta: [6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: COVID-19
+      assay_delta: [5]
+    - assay_type: blood_culture
+      organism: venous culture; no growth on the day of sample collected
+      assay_delta: [0]
+    - assay_type: blood_culture
+      organism: Staphylococcus aureus
+      assay_delta: [2]
+    - assay_type: csf_nonculture_diagnostics
+      organism: COVID-19
+      assay_delta: [5]
+    - assay_type: minibal
+      organism: COVID-19
+      assay_delta: [6]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: Candida albicans
+      assay_delta: [1]
+    - assay_type: blood_culture
+      organism: staphlococcus simulans
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: Candida albicans
+      assay_delta: [1, 3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: Candida albicans
+      assay_delta: [3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: Candida albicans
+      assay_delta: [4]
+    - assay_type: minibal
+      organism: COVID-19
+      assay_delta: [6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: Candida albicans
+      assay_delta: [4]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: Candida albicans
+      assay_delta: [7]
+    - assay_type: serology
+      organism: cytomegalovirus & ebv dna detected
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: throat culture- candida albicans
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: Candida albicans
+      assay_delta: [7]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: tracheal_aspirate
+      organism: staph epidermidis and candida albicans
+      assay_delta: [2]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [4]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: Escherichia coli
+      assay_delta: [5]
+    - assay_type: minibal
+      organism: Candida albicans
+      assay_delta: [4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: Klebsiella pneumoniae
+      assay_delta: [4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-5]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: Klebsiella pneumoniae
+      assay_delta: [8]
+    - assay_type: bal
+      organism: light growth of candida albicans/ heavy growth of escherichia coli
+      assay_delta: [8]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: Streptococcus pneumoniae
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: candida albicans and aspergillus species
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: aspergillus flavus
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: aspergillus fumigatus
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: candida albicans normal flora
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 3]
+    - assay_type: throatnose_swab
+      organism: none detected tested for different pathogen
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: ebv dna
+      assay_delta: [7]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [4]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: enterobacter cloacae complex
+      assay_delta: [7]
+    - assay_type: minibal
+      organism: COVID-19
+      assay_delta: [6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: enterococcus faecalis
+      assay_delta: [4]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: gram stain  wbc seen
+      assay_delta: [2]
+    - assay_type: bal
+      organism: auramine stain acid fast bacilli - not seen
+      assay_delta: [2]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+    - assay_type: tracheal_aspirate
+      organism: scant growth of yeast
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: haemolytic streptococcus group b
+      assay_delta: [3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: heamophilus influenzae
+      assay_delta: [1]
+    - assay_type: bal
+      organism: candida albicans; escherichia coli
+      assay_delta: [1]
+    - assay_type: bal
+      organism: escherichia coli; candida albicans
+      assay_delta: [5]
+    - assay_type: bal
+      organism: COVID-19
+      assay_delta: [7]
+    - assay_type: bal
+      organism: heamophilus sp                                    either haemophilus
+        influenzae or haemophilus aegyptius
+      assay_delta: [7]
+    - assay_type: bal
+      organism: escherichia coli; haemophilus influenzae; candida albicans
+      assay_delta: [7]
+    - assay_type: minibal
+      organism: escherichia coli; candida glabrata
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: heavy growth of yeasts unspeciated
+      assay_delta: [6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: light growth of yeasts/light growth of aspergillus fumigatus
+      assay_delta: [6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: mucoid appearance
+      assay_delta: [4]
+    - assay_type: blood_culture
+      organism: corynebacterium species isolated
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: nio growth at 2 days
+      assay_delta: [4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: urine_culture
+      organism: Escherichia coli
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: mixed bacterial growth
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: 'no directed bal: organism pluralibacter gergoviae & aspergillus fumigatus'
+      assay_delta: [5]
+    - assay_type: blood_culture
+      organism: coagulase negative staphylococcus
+      assay_delta: [0]
+    - assay_type: blood_culture
+      organism: no growth after 5 days incubation
+      assay_delta: [2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: culture result regional flora isolated
+      assay_delta: [2]
+    - assay_type: urinary_antigen_test
+      organism: urinary legionallea antigen not detected urinary pneumococcal antigen
+        not dtected
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: 'catheter specimen urine: no bacterial growth'
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: pseudamonas aeruginosa
+      assay_delta: [6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: pseudomonas aeruginosa
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: pseudomonas aeruginosa
+      assay_delta: [3]
+    - assay_type: bal
+      organism: COVID-19
+      assay_delta: [7]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: pus cells sgrp
+      assay_delta: [4]
+    - assay_type: bal
+      organism: Candida albicans
+      assay_delta: [4]
+    - assay_type: bal
+      organism: pseudomonas aeruginosa
+      assay_delta: [4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: rhino/entero virus
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: sputum specimen- pseudomonas aeruginosa
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: streptococcus dna
+      assay_delta: [3]
+    - assay_type: bal
+      organism: enterococcus faecalis dna
+      assay_delta: [3]
+    - assay_type: bal
+      organism: haemophilus influenzae dna
+      assay_delta: [3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: bal
+      organism: white blood cells no organisms seen
+      assay_delta: [0]
+    - assay_type: blood_culture
+      organism: Staphylococcus aureus
+      assay_delta: [-2]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [-2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2]
+    - assay_type: urinary_antigen_test
+      organism: legionella antigen not detected
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: 1 staphylococcus hominis isolated from 1 bottle after 1 day incubation                2
+        usually considered skin contaminant if the patient has                 3 intravascular
+        prosthetic material eg central lines                  4 prosthetic heart valves
+        pacemaker wires then this could               5 be a significant isolate please
+        contact microbiology                      consultant if further advice is
+        required                             the remaining bottle shows no growth
+        after 5 days incubation
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Candida albicans
+      assay_delta: [1]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [-5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Candida albicans
+      assay_delta: [2]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Escherichia coli
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: Escherichia coli
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Group A Streptococcus, Streptococcus pyogenes
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Klebsiella pneumoniae
+      assay_delta: [2]
+    - assay_type: throatnose_swab
+      organism: staphylococcus aureus
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Klebsiella pneumoniae
+      assay_delta: [4, 9]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Staphylococcus aureus
+      assay_delta: [-1]
+    - assay_type: fluid_from_infected_collection
+      organism: Staphylococcus aureus
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Staphylococcus aureus
+      assay_delta: [-1, 0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [-6, -1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-6, -1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Staphylococcus aureus
+      assay_delta: [-2, -1, 0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2, 0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Staphylococcus aureus
+      assay_delta: [0]
+    - assay_type: blood_culture
+      organism: staphlococcus hominis
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 3]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Staphylococcus aureus
+      assay_delta: [0]
+    - assay_type: blood_culture
+      organism: strepagalactiae grp b strep
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Staphylococcus aureus
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Staphylococcus aureus
+      assay_delta: [2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: sars cov 2 negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resp pcr negative
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [2]
+    - assay_type: tracheal_aspirate
+      organism: haemophilus influenzae  candida albicans
+      assay_delta: [2]
+    - assay_type: urinary_antigen_test
+      organism: legionella antigen negative
+      assay_delta: [2]
+    - assay_type: urinary_antigen_test
+      organism: pneumococcal antigen negative
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Staphylococcus epidermidis
+      assay_delta: [-2]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [-6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Staphylococcus epidermidis
+      assay_delta: [0]
+    - assay_type: minibal
+      organism: Candida albicans
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+    - assay_type: tracheal_aspirate
+      organism: candida dubliniensis
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Staphylococcus epidermidis
+      assay_delta: [0, 10]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2, 0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Staphylococcus epidermidis
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Staphylococcus epidermidis
+      assay_delta: [3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: Escherichia coli
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: lactose fermenting coliforms
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Streptococcus pneumoniae
+      assay_delta: [-1]
+    - assay_type: blood_culture
+      organism: gram positive cocci
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: Streptococcus pneumoniae
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Streptococcus pneumoniae
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Streptococcus pneumoniae
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: urinary_antigen_test
+      organism: Streptococcus pneumoniae
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: Streptococcus pneumoniae
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Streptococcus pneumoniae
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: skin flora isolated
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Streptococcus pneumoniae
+      assay_delta: [1]
+    - assay_type: blood_culture
+      organism: actinobacillus species
+      assay_delta: [1]
+    - assay_type: csf_nonculture_diagnostics
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: serology
+      organism: hepatistis c
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: Streptococcus pyogenes
+      assay_delta: [-2]
+    - assay_type: throatnose_swab
+      organism: Influenza A
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: acinetobacter lwoffii
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: acinetobacter lwoffii
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: Candida albicans
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: c acnes
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: clavispra lusitan
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coag neg staph
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coag negative staphylococcus
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coag-neg staph
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coag-neg steph
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase neg staph
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: negative multi resistant organism screen
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase neg staph
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: negative respiratory pcr influenza abparainfluenza species
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase neg staphylococcus
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase neg staphylococcus
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: influenza swabs negative
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase negative staohylcoccus
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase negative staph
+      assay_delta: [-3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase negative staph
+      assay_delta: [0]
+    - assay_type: blood_culture
+      organism: alpha haemolytic strep/ mixed coag neg staph
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: resistant organims screen- neg
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase negative staph
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resp pcr- negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- positive- enterobacter sp
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: legionella antigen negative
+      assay_delta: [1]
+    - assay_type: urinary_antigen_test
+      organism: pneumococcal antigen negative
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase negative staphylococcous
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase negative staphylococcus aerobic positive
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase negative staphylococcus sureilyticus
+      assay_delta: [-5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase negative staphylococcus
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase negative staphylococcus
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase negative staphylococcus
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase negative staphylococcus
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: urinary_antigen_test
+      organism: legionella/ pneumococcal antigen negative
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase negative staphylococcus
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: respiratory pcr negative
+      assay_delta: [0, 1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase negative staphylococcus
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: respiratory pcr negative
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase negative staphylococus
+      assay_delta: [2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: coagulase-negative staphylococci
+      assay_delta: [0]
+    - assay_type: fluid_from_infected_collection
+      organism: routine mc&s- organism not detected
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: corynebacterium singulare
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: staphylococcus aureus
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: enterobacter cloacae
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: enterobacter cloacae
+      assay_delta: [1]
+    - assay_type: wound_swab
+      organism: Staphylococci (other)
+      assay_delta: [2, 3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: enterobacter cloacae
+      assay_delta: [10]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-4]
+    - assay_type: tracheal_aspirate
+      organism: enterobacter cloacae
+      assay_delta: [9]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: enterococcus faecalis corynebacterium aurimucosum and coagulase negative
+        staphylococci
+      assay_delta: [-2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: escherichia
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: gram negative bacilli
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: gram negative rods
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: gram positive cocci  suggestive of streptococci
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: serology
+      organism: 'hepatitis b virus core total antibody : reactive'
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: gram positive cocci in clusters
+      assay_delta: [0]
+    - assay_type: blood_culture
+      organism: coagulase negative staph
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: gram positive cocci
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: gram positive cocci
+      assay_delta: [0, 2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 9]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: hepatitis b core antibody
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: micrococcus luteus
+      assay_delta: [0]
+    - assay_type: minibal
+      organism: pseudomonas aeruginosa; corynebacterium striatum
+      assay_delta: [7]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: mixed coagulase negative staphylococci likely contaminants
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: mixed coagulase negative staphylococci
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: negative at date
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: no gropwth
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: no growth after 48 hours incubation
+      assay_delta: [-3]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [-3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: no growth after 48hrs
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: influenza a & b not detected
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: no growth for 4 days
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: no growth with any organism
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2, 3]
+    - assay_type: throatnose_swab
+      organism: not detected on 14/10/2020 but again detected on 17/10/2020
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: no growth with any organism
+      assay_delta: [1]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: '#NAME?'
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: non detected
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: none detected on blood culture
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: none detected but does mention history of strep a on admission
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: not deteced
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: nothing grown
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: nothing
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: other
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: p mirabilis
+      assay_delta: [3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: propionibacterium acnes
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: sars-cov-2 negative
+      assay_delta: [-1]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: propionibacterium acnes
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: propionibacterium species
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: propionibactium
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: adenovirus
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: proteus penneri and staphyloccocus hominis
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: pseudomonas aeruginosa isolated from 1 bottle after 1 day incubation
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: candida species    yeast cells seen
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: 1 pseudomonas species isolated 2 enterococci isolated  3 skin flora
+        isolated
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: pseudomonas aeruginosa
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: sars covid-19
+      assay_delta: [8]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [8]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: separate sample none detected
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staph capitis
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: staph aureus
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: Staphylococci (other)
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: escherichia coli enterococcus faecalis
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staph coag negative scoa
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staph epidermatis
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staph hominis
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staph hominis
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphlococcus hominis
+      assay_delta: [0, 3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococci
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus capitis
+      assay_delta: [-1, 0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1, 0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus capitis
+      assay_delta: [0]
+    - assay_type: minibal
+      organism: Klebsiella pneumoniae
+      assay_delta: [7]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus capitis
+      assay_delta: [1]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus epidermidis and staphylococcus hominis
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus epidermidis isolated from both bottles after 1 day
+        incubation  2 usually considered skin contaminant if the patient has  3 intravascular
+        prosthetic material eg central lines 4 prosthetic heart valves pacemaker wires
+        then this could  5 be a significant isolate please contact microbiology consultant
+        if further advice is required
+      assay_delta: [1]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [-5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: Klebsiella pneumoniae
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus epidermidis staphylococcus capitis
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Streptococcus pneumoniae
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus epidermitis
+      assay_delta: [2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [8]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus hominis cns
+      assay_delta: [0]
+    - assay_type: blood_culture
+      organism: sepidermidis coag neg staph
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus hominis
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus hominis
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus hominis
+      assay_delta: [0, 7]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-3, -1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus hominis
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus lugduensis and micrococus luteus
+      assay_delta: [0]
+    - assay_type: fluid_from_infected_collection
+      organism: ascitic fluid no gorwth
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus spp
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1, 2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus warneri
+      assay_delta: [-2]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: staphylococcus
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: still  pending results
+      assay_delta: [2]
+    - assay_type: minibal
+      organism: enterococcus faecalis acinetobacter baumannii
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: streptococcus mitis
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: streptococcus mitis/oralis and negative staphylococcus
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: rhino/enterovirus positive
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: 'streptococcus oralis: alpha haemolytic streptococcus'
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: blood_culture
+      organism: vancomycin resistant enterococci
+      assay_delta: [3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: cerebrospinal_fluid
+      organism: no growth detected after 48 hours
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: streptococcus anginosus
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: csf_nonculture_diagnostics
+      organism: Enterovirus
+      assay_delta: [0]
+    - assay_type: csf_nonculture_diagnostics
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: fluid_from_infected_collection
+      organism: Klebsiella pneumoniae
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: fluid_from_infected_collection
+      organism: pneumocystis jirovecii
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: fluid_from_infected_collection
+      organism: pseudomonas aeruginosa
+      assay_delta: [1]
+    - assay_type: serology
+      organism: Mycoplasma pneumoniae
+      assay_delta: [-6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-5]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: fluid_from_infected_collection
+      organism: pseudomonas aeruginosa
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: fluid_from_infected_collection
+      organism: str constellatus
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: COVID-19
+      assay_delta: [-7, -1]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [-1, 0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1, 0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: COVID-19
+      assay_delta: [0, 4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: minibal
+      organism: Candida albicans
+      assay_delta: [3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: minibal
+      organism: citrobacter koseri
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: COVID-19
+      assay_delta: [3]
+    - assay_type: minibal
+      organism: aspergillus fumigatus normal flora
+      assay_delta: [6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Candida albicans
+      assay_delta: [3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Candida albicans
+      assay_delta: [3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: tested for other pathgoen none detected
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Candida albicans
+      assay_delta: [4, 7]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 3]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [0, 1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Candida albicans
+      assay_delta: [6]
+    - assay_type: minibal
+      organism: serratia liquefaciens
+      assay_delta: [6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Escherichia coli
+      assay_delta: [4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Klebsiella pneumoniae
+      assay_delta: [2, 4]
+    - assay_type: minibal
+      organism: not tested as known covid
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Klebsiella pneumoniae
+      assay_delta: [4]
+    - assay_type: minibal
+      organism: enterobacter bugandensis
+      assay_delta: [4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Klebsiella pneumoniae
+      assay_delta: [4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: rhinovirus
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: enterobacter cloacae
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Klebsiella pneumoniae
+      assay_delta: [5]
+    - assay_type: minibal
+      organism: candida corynobacterium
+      assay_delta: [5]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Klebsiella pneumoniae
+      assay_delta: [5]
+    - assay_type: minibal
+      organism: enterobacter hormechei sputum result not mini-bal
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: Influenza A
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Klebsiella pneumoniae
+      assay_delta: [5, 7]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Klebsiella pneumoniae
+      assay_delta: [7]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+    - assay_type: tracheal_aspirate
+      organism: c dubliniensis
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Staphylococcus aureus
+      assay_delta: [0, 1, 3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Staphylococcus aureus
+      assay_delta: [4]
+    - assay_type: minibal
+      organism: Candida albicans
+      assay_delta: [4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Staphylococcus aureus
+      assay_delta: [5]
+    - assay_type: minibal
+      organism: escherichia coli streptococcus group c candida albicans
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [3]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Staphylococcus aureus
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: Staphylococcus aureus
+      assay_delta: [6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [3]
+    - assay_type: urine_culture
+      organism: Escherichia coli
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: aspergillus fumigatus
+      assay_delta: [6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: candida albicans & escherichia coli
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: candida dubliniensis
+      assay_delta: [4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: candida dubliniensis
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: candida tropicalis & morganella morganii
+      assay_delta: [6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: coliform bacilli
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [7]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: e coli & candida albicans
+      assay_delta: [7]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: e coli c albicans enterobacter
+      assay_delta: [7]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: Klebsiella pneumoniae
+      assay_delta: [3]
+    - assay_type: tracheal_aspirate
+      organism: candida albicans e coli
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: enterobacter cloacae
+      assay_delta: [0]
+    - assay_type: minibal
+      organism: Staphylococcus aureus
+      assay_delta: [3]
+    - assay_type: minibal
+      organism: candida albicans and enterobacter kobei
+      assay_delta: [3]
+    - assay_type: minibal
+      organism: Candida albicans
+      assay_delta: [4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: mrsa not detected
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: escheria coli
+      assay_delta: [4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: gram positive cocci
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: escherichia coli candida albicans
+      assay_delta: [4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: haemophilus influenzae
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 3]
+    - assay_type: tracheal_aspirate
+      organism: haemophilus influenzae
+      assay_delta: [3]
+    - assay_type: wound_swab
+      organism: Staphylococcus aureus
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: haemophilus influenzae
+      assay_delta: [6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: indeterminate for covid-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: indeterminate for covid-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: duplicate sample for covid-19 not tested
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: klebsiella aerogens
+      assay_delta: [4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: moderate growth of candia albicans
+      assay_delta: [-2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2, 3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: none detected not tested for covid as already positive on swab
+      assay_delta: [0]
+    - assay_type: minibal
+      organism: Escherichia coli
+      assay_delta: [4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: not tested for covid a spositive on swab no other pathogens grown
+      assay_delta: [0]
+    - assay_type: minibal
+      organism: COVID-19
+      assay_delta: [4, 5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: now growth
+      assay_delta: [1]
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: pus cells sgrp
+      assay_delta: [1]
+    - assay_type: minibal
+      organism: Escherichia coli
+      assay_delta: [1]
+    - assay_type: minibal
+      organism: candida glabrata
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: sent for covid not tested as already positive on swab
+      assay_delta: [0]
+    - assay_type: minibal
+      organism: tested for other pathogens none detected
+      assay_delta: [1]
+    - assay_type: minibal
+      organism: Streptococcus pneumoniae
+      assay_delta: [6]
+    - assay_type: minibal
+      organism: cephalosporinase escherichia coli
+      assay_delta: [6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: tested for other oathogen none detected
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: minibal
+      organism: serratia marcenscens  candida albians complex
+      assay_delta: [3]
+    - assay_type: minibal
+      organism: serratia marcenscens  yeast unidentified
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: tracheal_aspirate
+      organism: pseudomonas aeruginosa
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [-3, 0, 3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-3, 0, 3]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [-3, 0, 3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [-5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [6]
+    - assay_type: tracheal_aspirate
+      organism: coliform organism isolated
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: enterococcus faecium
+      assay_delta: [-2]
+    - assay_type: urine_culture
+      organism: enterococcus faecium
+      assay_delta: [-2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: serology
+      organism: Candida albicans
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: serology
+      organism: patient became negative on 29/06/2020
+      assay_delta: [6]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resp pcr negative
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: pseudomonas aeruginosa
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [2]
+    - assay_type: tracheal_aspirate
+      organism: e coli candida albicans
+      assay_delta: [2]
+    - assay_type: wound_swab
+      organism: Staphylococci (other)
+      assay_delta: [1, 3]
+    - assay_type: wound_swab
+      organism: alcaligenes faecalis
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: negative result for both tests
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: pneumococcal urinary antugen
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: Candida albicans
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: Influenza A
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: no influenza a or b detected
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: no legionellea p streptococcus p isolated
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: Streptococcus pneumoniae
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: Enterococci
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: candida glabrata
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: mixed growth microscopy has not been performed
+      assay_delta: [-2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: serology
+      organism: mycoplasma
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: candida glabrata
+      assay_delta: [2]
+    - assay_type: wound_swab
+      organism: Staphylococcus aureus
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: Group A Streptococcus
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: urine_culture
+      organism: Candida albicans
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: urine_culture
+      organism: Escherichia coli
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: wound_swab
+      organism: Escherichia coli
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: COVID-19
+      assay_delta: [2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+    - assay_type: urinary_antigen_test
+      organism: pneumococcal
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: Dengue
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: Mycoplasma pneumoniae
+      assay_delta: [-6, -3, -1, 0, 1, 2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-4, -3, -1, 0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: Mycoplasma pneumoniae
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: Streptococcus pneumoniae
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: beta d-glucan
+      assay_delta: [4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: epstein barr vca igm
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: stenotrophomonas maltophilia and haemophilus influensae
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: hepatitis c screen
+      assay_delta: [2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: hiv serology - no growth detected
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: hiv
+      assay_delta: [3]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: yeasts
+      assay_delta: [0, 3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: hiv-1/hiv-2 antibody and p24 antigen not detected
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: hsv-1/2 igg
+      assay_delta: [5]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [6]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: mycoplasma pneumoniae igm detected
+      assay_delta: [-4]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-4]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [-4]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: positive ab result
+      assay_delta: [10]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [10]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: procalcitonin
+      assay_delta: [-2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-3]
+    - assay_type: urine_culture
+      organism: legionella
+      assay_delta: [-3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: serology
+      organism: sars cov 2 negative
+      assay_delta: [2]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resp pcr- negative
+      assay_delta: [1]
+    - assay_type: urinary_antigen_test
+      organism: legionella antigen negative
+      assay_delta: [1]
+    - assay_type: urinary_antigen_test
+      organism: pneumococcal antigen negative
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2, -1, 0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [-1, 0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1, 1, 2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1, 1, 4]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen - negative
+      assay_delta: [1, 7]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: covid pcr "indeterminate presumptive positive"
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: covid-19 negative
+      assay_delta: [10]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: negative result for sars-cov-2covid-19
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: st pneumoniae antigen
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: swab taken pre itu admission in ae
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: tracheal_aspirate
+      organism: escherichia coli and candida species
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: tracheal_aspirate
+      organism: haempphilus influenzae
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: tracheal_aspirate
+      organism: moraxella catrrhalis
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: urinary_antigen_test
+      organism: negative for legionella pneumophila
+      assay_delta: [4]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: urinary_antigen_test
+      organism: no current or past infection
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: urinary_antigen_test
+      organism: suggests no reent of current infection
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-1]
+    - assay_type: urine_culture
+      organism: npot detected
+      assay_delta: [-1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2, -1]
+    - assay_type: urine_culture
+      organism: Escherichia coli
+      assay_delta: [-2, -1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2]
+    - assay_type: throatnose_swab
+      organism: negative multi resistant organism screen
+      assay_delta: [0, 3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2]
+    - assay_type: throatnose_swab
+      organism: staph aureus
+      assay_delta: [-2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2]
+    - assay_type: tracheal_aspirate
+      organism: candida albicans and hafnia alvei
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2, 0, 2]
+    - assay_type: urinary_antigen_test
+      organism: Streptococcus pneumoniae
+      assay_delta: [-3, -1, 1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2]
+    - assay_type: urine_culture
+      organism: coliform
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2, 0]
+    - assay_type: wound_swab
+      organism: Staphylococcus aureus
+      assay_delta: [0, 1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-2]
+    - assay_type: wound_swab
+      organism: heavy growth of mixed skin organisms
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-3]
+    - assay_type: throatnose_swab
+      organism: documented pt had community pcr test 01/11/20 got positive result
+        04/11/20
+      assay_delta: [-3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-3]
+    - assay_type: throatnose_swab
+      organism: referred sample unsure where the swab was taken
+      assay_delta: [-3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-3]
+    - assay_type: urinary_antigen_test
+      organism: Candida albicans
+      assay_delta: [-3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-4, 7]
+    - assay_type: urine_culture
+      organism: yeast
+      assay_delta: [-3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-4]
+    - assay_type: throatnose_swab
+      organism: positive swab in the community on the 17feb2021
+      assay_delta: [-4]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-5, 0]
+    - assay_type: throatnose_swab
+      organism: sars cov 2 negative
+      assay_delta: [-3]
+    - assay_type: throatnose_swab
+      organism: respiratory pcr negative
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: resistant organism negative
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-6]
+    - assay_type: urine_culture
+      organism: Staphylococcus aureus
+      assay_delta: [7]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-9]
+    - assay_type: urinary_antigen_test
+      organism: antigen not detected
+      assay_delta: [-1]
+    - assay_type: urine_culture
+      organism: mixed growth
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 10]
+    - assay_type: throatnose_swab
+      organism: not detected on 11/11/2020
+      assay_delta: [10]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: negative multi resistant organism screen
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: negative respiratory pcr influenza abparainfluenza species
+      assay_delta: [1]
+    - assay_type: urinary_antigen_test
+      organism: negative for legionella and pneumococcal antigen
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: respiratory pcr negative
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: mrsa positive
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: yeasts
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: tracheal_aspirate
+      organism: yeasts
+      assay_delta: [0, 1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 3]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 3]
+    - assay_type: tracheal_aspirate
+      organism: Streptococcus pneumoniae
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 3]
+    - assay_type: tracheal_aspirate
+      organism: aspergillus fumigatus
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 3]
+    - assay_type: tracheal_aspirate
+      organism: haemophilus influenzae
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 3]
+    - assay_type: urine_culture
+      organism: coliform
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 6]
+    - assay_type: throatnose_swab
+      organism: negative result for sars-cov-2 covid-19
+      assay_delta: [6]
+    - assay_type: urinary_antigen_test
+      organism: negative for legionella pneumophila
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: Chlamydia pneumoniae
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: Klebsiella pneumoniae
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Klebsiella pneumoniae
+      assay_delta: [3]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: bocavirus
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: citrobacter
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: confirmation of positive result on the system 14th april 2020
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: sputum -normal upper rispiratory tract flora 00:21 no significant
+        growth 16:30
+      assay_delta: [1]
+    - assay_type: urine_culture
+      organism: catheter urine - no significant growth
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: covid-19  not detected
+      assay_delta: [2]
+    - assay_type: urine_culture
+      organism: Enterococci
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: esbl positive
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: human metapneumovirus
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: human metapneumovirus
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: mrsa not detected
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: mrsa not isolated
+      assay_delta: [2]
+    - assay_type: urinary_antigen_test
+      organism: legionella antigen not detected
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: pneumococcal antigen not detected
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: mrsa positive
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: negative infulenza swabs
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: negative 2019-ncov rna
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: negative multi resistant organism screen
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: negative for legionella and pneumococcal antigen
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: negative respiratory pcr influenza abparainfluenza species
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: negative respiratory pcr influenza abparainfluenza species
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: negative multi resistant organism screen
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: negative respiratory pcr influenza abparainfluenza species
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: Escherichia coli
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 4]
+    - assay_type: throatnose_swab
+      organism: negative respiratory pcr not covid
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: none detected sent for other pathogen testing none detected
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism esbl positive
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: respiratory pcr negative
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 2]
+    - assay_type: throatnose_swab
+      organism: resistant organism negative
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen negative
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen negative
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: csu negative
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: tracheal asp- negative
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: atypical pcr upper- negative
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- positive- citrobacter sp
+      assay_delta: [3]
+    - assay_type: urine_culture
+      organism: positive- candida dubliniensis
+      assay_delta: [4]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 2]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resp pcr negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: sars cov 2 negative
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resp pcr negative
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: legionella antigen negative
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0, 2]
+    - assay_type: throatnose_swab
+      organism: resp pcr negative
+      assay_delta: [0, 1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resp pcr- negative
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: legionella antigen negative
+      assay_delta: [1]
+    - assay_type: urinary_antigen_test
+      organism: pneumococcal antigen negative
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: legionella antigen negative
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: pneumococcal antigen negative
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: legionella/ pneumococcal antigen negative
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: csu negative
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- positive- mrsa
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 2]
+    - assay_type: throatnose_swab
+      organism: resp pcr negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resp pcr negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: human metapneumovirus
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resp pcr negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [0, 2, 3]
+    - assay_type: urinary_antigen_test
+      organism: legionella antigen negative
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: respiratory pcr negative
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: respiratory pcr- negative
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: rhino/enterovirus positive
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: rhinovirus positive
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: sar-cov-2 negative
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: sars-cov-2 negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resistant organism negative
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: proteus mirabilis      enterococcus faecalis mixed anaerobes
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: proteus mirabilis  group b beta haemolytic streptococcus
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: seasonal cov low level positivity
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: haemophilus influenzae abnormal
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: throatnose_swab
+      organism: staphylococcus aureus
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: vre
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [0, 2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: staphylococcus aureus
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Klebsiella pneumoniae
+      assay_delta: [2]
+    - assay_type: urine_culture
+      organism: candida sp
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Streptococcus pneumoniae
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: haemophilius influenzae
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: Candida albicans
+      assay_delta: [1]
+    - assay_type: urine_culture
+      organism: Klebsiella pneumoniae
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [2]
+    - assay_type: tracheal_aspirate
+      organism: candida tropicalis
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: Staphylococcus aureus
+      assay_delta: [2]
+    - assay_type: tracheal_aspirate
+      organism: escherichia coli  staphlococcus aureus  yeasts
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: aspergillis fumigatus
+      assay_delta: [1]
+    - assay_type: wound_swab
+      organism: Escherichia coli
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: candida albicans candida species
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: candida dubiniensis candida glabrata
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 2]
+    - assay_type: tracheal_aspirate
+      organism: candida dubliniensis
+      assay_delta: [0, 1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: candida galabrata
+      assay_delta: [1]
+    - assay_type: urinary_antigen_test
+      organism: pneumococcus antigen
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: candida glabrata candida albicans
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: candida sp
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: ctropicalis
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: enterobacter cloacae & candida tropicalis
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: h influenza & c albicans
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: klebsiella oxytoca candida albicans
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: pseudomonas sp
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: alpha haemolytic streptococcus
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: stenotrophomonas maltophilia
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: yeast
+      assay_delta: [2]
+    - assay_type: tracheal_aspirate
+      organism: yeasts
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: pseudomonas
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: specimen not received by lab second sample sent on 442020
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: yeas
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: yeasts
+      assay_delta: [0, 3]
+    - assay_type: urine_culture
+      organism: candida sp
+      assay_delta: [0, 2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: tracheal_aspirate
+      organism: yeasts
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: Streptococcus pneumoniae
+      assay_delta: [1]
+    - assay_type: urine_culture
+      organism: Streptococcus pneumoniae
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: antogens not detected
+      assay_delta: [4]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: legionella and pneumococcal both negative
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: negative for both legionella & pnemacoccal
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: left leg & right leg mixed bacterial growth colonisation
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: no recent or current infectyion
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: pneumococcal antigen
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: pneumococcal pneumonia
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: pneumococcal urine antigen
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 1]
+    - assay_type: urinary_antigen_test
+      organism: pneumococcal
+      assay_delta: [0, 1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: tested for legionella result negative
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: Enterococci
+      assay_delta: [0, 1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: candida albicans 10^7-10^8 cfu/litre
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: candida albicans and candida glabrata
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: candida and nakaseomyces glabrata
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: candida species
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: csu- negative
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: mixed organisms
+      assay_delta: [0, 3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: moderate growth of yeasts
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: 1 moderate growth of esch coli  2 above organism of esbl
+      assay_delta: [4]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: Staphylococci (other)
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: Staphylococcus aureus
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: Streptococci (other)
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: Streptococci (other)
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: anaerobes isolated
+      assay_delta: [5]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: faecal
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: mixed enteric flora
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: wound_swab
+      organism: pseudomonas aeruginosa
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [10]
+    - assay_type: throatnose_swab
+      organism: not detected on 29/11/2020
+      assay_delta: [10]
+    - assay_type: urine_culture
+      organism: Enterococci
+      assay_delta: [4]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1, 2]
+    - assay_type: tracheal_aspirate
+      organism: hafnia alvei
+      assay_delta: [3]
+    - assay_type: urine_culture
+      organism: candida sp
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: adenovirus / rhino-enterovirus / bocavirus
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: respiratory pcr negative
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: sars-cov-2 covid 19 negative swab
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: resistant organism negative
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: clavispora lusitan
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: no growth untill 21/01/2021
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: pulmonary aspergillosis
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: streptococcus pneumoniae heavy growth
+      assay_delta: [2]
+    - assay_type: tracheal_aspirate
+      organism: serratia marcescens scanty growth
+      assay_delta: [2]
+    - assay_type: tracheal_aspirate
+      organism: candida albicans scanty growth
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: yeast
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: urinary_antigen_test
+      organism: insufficient sample obtained no result
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: urinary_antigen_test
+      organism: nad for streptococcus pneumoniae
+      assay_delta: [0]
+    - assay_type: urinary_antigen_test
+      organism: nad  for legionella pneumophila
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1, 3]
+    - assay_type: urine_culture
+      organism: heavy mixed growth significance
+      assay_delta: [1, 2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2, 10]
+    - assay_type: throatnose_swab
+      organism: not detected on 19/11/2020
+      assay_delta: [10]
+    - assay_type: urinary_antigen_test
+      organism: Legionella pneumophila
+      assay_delta: [1]
+    - assay_type: urinary_antigen_test
+      organism: Streptococcus pneumoniae
+      assay_delta: [1]
+    - assay_type: urinary_antigen_test
+      organism: negative result for both the above tests
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+    - assay_type: throatnose_swab
+      organism: not detected on 11/01/2021 and 17/01/2021
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+    - assay_type: tracheal_aspirate
+      organism: Klebsiella pneumoniae
+      assay_delta: [3]
+    - assay_type: tracheal_aspirate
+      organism: citrobacter koseri
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+    - assay_type: tracheal_aspirate
+      organism: candida species isolated
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+    - assay_type: tracheal_aspirate
+      organism: pseudomonas aeruginosa
+      assay_delta: [0, 3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+    - assay_type: urinary_antigen_test
+      organism: negative legionella antigen
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [3]
+    - assay_type: throatnose_swab
+      organism: mrsa
+      assay_delta: [5]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [3]
+    - assay_type: tracheal_aspirate
+      organism: serratia marcescens
+      assay_delta: [3]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [3]
+    - assay_type: urinary_antigen_test
+      organism: positive pneumococcal urinary antigen
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [4]
+    - assay_type: urinary_antigen_test
+      organism: no recent or  current infection
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: Influenza A
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0, 7]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: Influenza A
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: Respiratory syncitial virus
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: urine_culture
+      organism: Escherichia coli
+      assay_delta: [10]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: Respiratory syncitial virus
+      assay_delta: [-3, 0, 1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [-3, 0, 1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: Respiratory syncitial virus
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: rhino/enterovirus
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: adenovirus dna
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: enterovirus rna
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: mrsa not isolated
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [2]
+    - assay_type: urinary_antigen_test
+      organism: legionella antigen not detected
+      assay_delta: [0]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- negative
+      assay_delta: [-1, 0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: resp pcr negative
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: resistant organism screen- positive- vre
+      assay_delta: [2]
+    - assay_type: tracheal_aspirate
+      organism: positive- fungus
+      assay_delta: [2]
+    - assay_type: urinary_antigen_test
+      organism: legionella antigen negative
+      assay_delta: [2]
+    - assay_type: urinary_antigen_test
+      organism: pneumococcal antigen negative
+      assay_delta: [2]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: sars-cov-2 negative
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: respiratory pcr negative
+      assay_delta: [-1]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: throatnose_swab
+      organism: resistant organism negative
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: sars-cov-2 negative
+      assay_delta: [0, 1, 3]
+    - assay_type: throatnose_swab
+      organism: resistant organism negative
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+    - assay_type: tracheal_aspirate
+      organism: escherichia coli  staphlococcus aureus
+      assay_delta: [1]
+  - prim_diagnosis_odap: COVID-19
+    assays:
+    - assay_type: throatnose_swab
+      organism: yeasts
+      assay_delta: [0]
+    - assay_type: throatnose_swab
+      organism: COVID-19
+      assay_delta: [1]
+

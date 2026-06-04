@@ -1,0 +1,9 @@
+phenotype_group:
+  - phenotype_column: covid19_swab_periAdmission
+    phenotype_label: covid19
+    case_definitions:
+      - prim_diagnosis_odap: COVID-19
+        assays:
+          - assay_type:  throatnose_swab
+            organism:    COVID-19
+            assay_delta: {min: -10, max: 10}

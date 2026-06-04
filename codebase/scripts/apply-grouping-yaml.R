@@ -81,7 +81,7 @@ if (length(missing_fixed) > 0) {
 
 message("Profiles loaded : ", nrow(profiles), " rows, ",
         length(unique(profiles$profile_number)), " profiles")
-message("Phenotype groups: ", length(config$phenotype_groups))
+message("Phenotype group: ", length(config$phenotype_group))
 
 
 
@@ -90,7 +90,7 @@ message("Phenotype groups: ", length(config$phenotype_groups))
 ## Drop Pre-existing Phenotype Columns ####
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Remove any columns already defined in the yaml so they are rebuilt from scratch
-yaml_cols  <- sapply(config$phenotype_groups, `[[`, "phenotype_column")
+yaml_cols  <- sapply(config$phenotype_group, `[[`, "phenotype_column")
 total_cols <- paste0(yaml_cols, "_total_px")
 drop_cols  <- intersect(names(profiles), c(yaml_cols, total_cols))
 
@@ -105,7 +105,7 @@ if (length(drop_cols) > 0) {
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## Apply Phenotype Groups ####
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-for (pg in config$phenotype_groups) {
+for (pg in config$phenotype_group) {
   pheno_col <- pg$phenotype_column
   total_col <- paste0(pheno_col, "_total_px")
 
