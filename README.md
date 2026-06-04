@@ -3,44 +3,9 @@
 R-based workflow that facilitates GWAS phenotype grouping.
 
 ## yaml logic
-- Arbirary example yaml:
-```
-phenotype_groups:
-- phenotype_column: test_pheno
-  phenotype_label: test
-  profiles:
-  - prim_diagnosis_odap: COVID-19
-    assays:
-    - assay_type: throatnose_swab
-      organism: COVID-19
-      assay_delta: -1
-    - assay_type: blood_culture
-      organism: COVID-19
-      assay_delta: ~
-  - prim_diagnosis_odap: Acute pneumonia complicating confirmed infection with influenza
-      virus
-    assays:
-    - assay_type: blood_culture
-      organism: COVID-19
-      assay_delta: ~
-  - prim_diagnosis_odap: Preterm birth < 32 weeks postmenstrual age
-    assays: ~
+LINK TO Grouping_yaml_logic.md
 
-```
-- One GWAS phenotype group per yaml for the development phase (individual yamls will be combined programatically in ODAP for application to the individual-level data)
-- Profiles that fit any of the first-level conditions (e.g. prim_diagnosis_odap + assays) will be assigned to the group
-  - In the arbitrary example above, profiles that fit any of the three conditions will be assigned to the test_pheno group
-
-| yaml value | Meaning | Behaviour |
-| ------ | ------ | ------ |
-|   ~     |   field is absent/unknown    |    only matches rows where that column is `NA`    |
-|    `ANY`    |        |    matches any row regardless of value    |
-|    assay_delta: 4    |   specific value     |    exact match only    |
-
-
-- When an assay delta is not specified (~), any value for delta will result in inclusion into the group
-  - In the arbitrary example yaml above that would mean any profile with `prim_diagnosis_odap == Acute pneumonia complicating confirmed infection with influenza virus` and a `blood_culture` assay detecting `COVID-19` for any `assay_delta`
-- When an assay delta is specified, only profiles with an exact match to all the elements of the condition will be included
+---
 
 ## Iterative Workflow
 The purpose of this workflow is to generate a yaml file that specifies the patient profiles that belong to a GWAS phenotype grouping. The individual phenotype yaml files are combined into a single phenotype specification yaml within ODAP and applied to individual level data as part of the covariates generation pipeline. Participants can belong to multiple GWAS phenotype groupings.
@@ -52,7 +17,7 @@ For help and information on flags, run:
 ./gwas-phenotype-grouping-launcher.sh --help
 ```
 
-The intention of this workflow is that iterative work is done in a genomicc-redcap-grouping/runs/genomicc-redcap-grouping_{phenotype_name}/work directory. The launcher will copy the profiles csv file from external-params into the work directory, and expects to find a phenotypes yaml in the work directory
+The intention of this workflow is that iterative work is done in a genomicc-redcap-grouping/runs/genomicc-redcap-grouping_{phenotype_name}/work directory. The launcher will copy the profiles csv file from external-params into the work directory, and expects to find a phenotypes yaml in the work directory. The yaml can either be generated with --generate, or manually constructed.
 
 
 ### 1. Specifying the yaml directly
@@ -101,9 +66,9 @@ This will:
 - Check for R and R packages
 - Create a log entry
 
-2. Add your <name> value to the first row of the first available column in the  `genomicc-redcap-grouping/runs/genomicc-redcap-grouping_<name>/diagnoses_and_tests_profiles_2{timestamp}.csv` file.
+2. Add your <name> value to the first row of the first available column in the  `genomicc-redcap-grouping/runs/work/diagnoses_and_tests_profiles_{run_timestamp}.csv` file.
 
-3. Add consistent values in the newly created <name> column in the `genomicc-redcap-grouping/runs/genomicc-redcap-grouping_<name>/diagnoses_and_tests_profiles_2{timestamp}.csv` file for every profile that meets the conditions for inclusion into the GWAS phenotype group you are creating.
+3. Add consistent values in the newly created <name> column in the `genomicc-redcap-grouping/runs/work/diagnoses_and_tests_profiles_{run_timestamp}.cs` file for every profile that meets the conditions for inclusion into the GWAS phenotype group you are creating.
 
 4. Save the file.
 
@@ -135,6 +100,8 @@ Options 1 and 2 can also be used in combination to generate a grouping yaml. For
 ./gwas-phenotype-grouping-launcher.sh --help
 ```
 
+---
+
 ## Final output
 Once you are happy with your yaml you can finalise the output with:
 ```
@@ -143,6 +110,7 @@ Once you are happy with your yaml you can finalise the output with:
 - Where <name> is the name of the GWAS phenotype grouping
 - This will copy the profiles and yaml files in `work` into `output` as `diagnoses_and_tests_profiles_with_phenotypes_<name>-{timestamp}.csv` and `<name>_gwas_grouped_phenotypes-{timestamp}.yaml`
 
+---
 
 ## Repo Architecture
 ```
@@ -156,7 +124,7 @@ genomicc-redcap-grouping/                          # Git repository root
 │
 ├── codebase/                             # Versioned codebase
 │   │  
-│   ├── external_params/                  
+│   ├── external-params/                  
 │   │   └── diagnoses_and_tests_profiles_{run_timestamp}.csv      # Input file(s) for grouping; output of cleaning pipeline. Only shared via email
 │   │   
 │   ├── scripts/                      
@@ -164,18 +132,22 @@ genomicc-redcap-grouping/                          # Git repository root
 │   │   ├── apply-grouping-yaml.R         # Apply a yaml to a profiles file; one phenotype at a time                   
 │   │   └── generate-grouping-yaml.R      # Generate a yaml from an edited profiles file; one phenotype at a time
 │   │    
-│   ├── shared_utilities/
+│   ├── shared-utilities/
 │   │   └── shared-params.R
+│   │    
+│   ├── tests/
+│   │   ├── example.csv           # Synthetic profiles file for code/yaml practice
+│   │   └── example-groups.yaml   # Basic yaml; copy yaml code examples in and apply to example.csv to practice
 │   │    
 │   └── yaml-library/                   # The existing finalised yaml library; one file per GWAS phenotype grouping
 │       ├── ...
 │
 └── runs/                                 # Not versioned
     │
-    ├── genommic-redcap-grouping_{phenotype_name}/            # Run dir per phenotype
+    ├── genomicc-redcap-grouping_{phenotype_name}/            # Run dir per phenotype
     │   │
     │   ├── params/                       
-    │   │   └── diagnoses_and_tests_profiles_{run_timestamp}.csv  # Copied in from external_params once when run is started
+    │   │   └── diagnoses_and_tests_profiles_{run_timestamp}.csv  # Copied in from external-params once when run is started
     │   │
     │   ├── work/
     │   │   ├── gwas-grouped-phenotypes.yaml                      # editable, overwritten each iteration                     
@@ -188,7 +160,7 @@ genomicc-redcap-grouping/                          # Git repository root
     │   │   ├── <name>_gwas_grouped_phenotypes-{timestamp}.yaml                    
     │   │   └── diagnoses_and_tests_profiles_with_phenotypes_<name>-{timestamp}.csv
     │   │
-    │   └── git_commit.txt                  # Version of pipeline used in run; will show e.g. v1.0.0-dirty if ran with uncommitted 
+    │   └── git_commit.txt                  # Version of pipeline used in run; will show e.g. v1.0.0-dirty if ran with uncommitted code
     │
 
 ```

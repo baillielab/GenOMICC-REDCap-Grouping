@@ -116,7 +116,7 @@ for (phenotype_col in phenotype_cols) {
     group_entry <- list(
       phenotype_column = phenotype_col,
       phenotype_label = label_value,
-      profiles = build_profiles(label_df)
+      case_definitions = build_profiles(label_df)
     )
 
     all_groups <- c(all_groups, list(group_entry))
@@ -132,7 +132,7 @@ for (phenotype_col in phenotype_cols) {
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 out_file <- file.path(OUTPUT_DIR, paste0(PHENOTYPE_NAME, "-groups.yaml"))
 
-yaml_str <- as.yaml(list(phenotype_groups = all_groups))
+yaml_str <- as.yaml(list(phenotype_group = all_groups))
 
 collapse_delta_lists <- function(yaml_str) {
   pattern <- "assay_delta:\n(?:[ \t]+-\\s*-?[0-9]+\n)+"
