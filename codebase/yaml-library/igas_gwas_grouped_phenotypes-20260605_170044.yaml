@@ -1,0 +1,31 @@
+phenotype_group:
+  - phenotype_column: igas
+    phenotype_label: igas
+    case_definitions:
+      - prim_diagnosis_odap: "Group A Streptococcus"
+        assays:
+          - assay_type: "ANY"
+            organism:    "ANY"
+            assay_delta: "ANY"
+      - prim_diagnosis_odap: ["Sepsis of unknown source", "Sepsis"]
+        assays:
+          - assay_type: [blood_culture, throatnose_swab, tracheal_aspirate, fluid_from_infected_collection, wound_swab, minibal, bal]
+            organism:    "Streptococcus pyogenes"
+            assay_delta: "ANY"
+      - prim_diagnosis_odap:
+        - "Pneumonia with radiographic changes at presentation to critical care"
+        - "Community acquired pneumonia"
+        - "COVID-19"
+        - "Respiratory syncytial virus"
+        - "Influenza"
+        - "Suspected Influenza virus"
+        - "Acute pneumonia complicating confirmed infection with influenza virus"
+        assays:
+          - assay_type: [blood_culture, throatnose_swab, tracheal_aspirate, minibal, bal]
+            organism:    "Streptococcus pyogenes"
+            assay_delta: "ANY"
+      - prim_diagnosis_odap: ["Soft tissue infections causing systemic sepsis", "Necrotising fasciitis", "Cellulitis"]
+        assays:
+          - assay_type: [blood_culture, throatnose_swab, fluid_from_infected_collection, wound_swab]
+            organism:    "Streptococcus pyogenes"
+            assay_delta: "ANY"
