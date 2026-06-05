@@ -13,7 +13,8 @@ R-based workflow that facilitates GWAS phenotype grouping.
 The purpose of this workflow is to generate a yaml file that specifies the patient profiles that belong to a GWAS phenotype grouping. The individual phenotype yaml files are combined into a single phenotype specification yaml within ODAP and applied to individual level data as part of the covariates generation pipeline. Participants can belong to multiple GWAS phenotype groupings.
 
 The workflow allows two methods of generating the GWAS phenotype defining yaml file. These methods can be used separately or in combination; see below for details.
-**NOTE**
+
+**NOTE:**
 For help and information on flags, run:
 ```
 ./gwas-phenotype-grouping-launcher.sh --help
@@ -25,7 +26,7 @@ The intention of this workflow is that iterative work is done in a genomicc-redc
 ### 1. Specifying the yaml directly
 A user can directly specify the parameters in a yaml file by manual editing. 
 Steps:
-1. Create the run directory with a dry run:
+#### 1. Create the run directory with a dry run:
 ```
 ./gwas-phenotype-grouping-launcher.sh -n <name> --dry-run
 ```
@@ -35,12 +36,12 @@ This will:
 - Check for R and R packages
 - Create a log entry
 
-2. Create a yaml manually
+#### 2. Create a yaml manually
 - Copy one of the current working library of yamls from `genomicc-redcap-grouping/codebase/yaml-library` to `genomicc-redcap-grouping/runs/genomicc-redcap-grouping_<name>/work`
 - Rename this yaml `<name>-groups.yaml`
 - Make your edits and save
 
-3. To see what effect applying the GWAS phenotype grouping yaml has, it can be applied to the profiles file with:
+#### 3. To see what effect applying the GWAS phenotype grouping yaml has, it can be applied to the profiles file with:
 ```
 ./gwas-phenotype-grouping-launcher.sh -n <name> --apply
 ```
@@ -58,7 +59,7 @@ This will:
 ### 2. Programmatically generating the yaml
 A user can programatically generate a grouping yaml file by manually adding a column to the profiles csv file.
 Steps:
-1. Create the run directory with a dry run:
+#### 1. Create the run directory with a dry run:
 ```
 ./gwas-phenotype-grouping-launcher.sh -n <name> --dry-run
 ```
@@ -68,13 +69,13 @@ This will:
 - Check for R and R packages
 - Create a log entry
 
-2. Add your `<name>` value to the first row of the first available column in the  `genomicc-redcap-grouping/runs/work/diagnoses_and_tests_profiles_{run_timestamp}.csv` file.
+#### 2. Add your `<name>` value to the first row of the first available column in the  `genomicc-redcap-grouping/runs/work/diagnoses_and_tests_profiles_{run_timestamp}.csv` file.
 
-3. Add consistent values in the newly created `<name>` column in the `genomicc-redcap-grouping/runs/work/diagnoses_and_tests_profiles_{run_timestamp}.cs` file for every profile that meets the conditions for inclusion into the GWAS phenotype group you are creating.
+#### 3. Add consistent values in the newly created `<name>` column in the `genomicc-redcap-grouping/runs/work/diagnoses_and_tests_profiles_{run_timestamp}.cs` file for every profile that meets the conditions for inclusion into the GWAS phenotype group you are creating.
 
-4. Save the file.
+#### 4. Save the file.
 
-5. Generate the yaml:
+#### 5. Generate the yaml:
 ```
 ./gwas-phenotype-grouping-launcher.sh -n <name> --generate
 ```
@@ -82,7 +83,7 @@ This will:
 - Use quotation marks around the name if the name contains spaces or non-standard characters
 - Optional: Specify the input file with option -i (call --help for details). If not specified, the most recent profiles csv file in `genomicc-redcap-grouping/runs/genomicc-redcap-grouping_<name>/work/` will be used.
 
-6. To see what effect applying the GWAS phenotype grouping yaml has, it can be applied to the profiles file with:
+#### 6. To see what effect applying the GWAS phenotype grouping yaml has, it can be applied to the profiles file with:
 ```
 ./gwas-phenotype-grouping-launcher.sh -n <name> --apply
 ```
@@ -118,7 +119,7 @@ Once you are happy with your yaml you can finalise the output with:
 ```
 genomicc-redcap-grouping/                          # Git repository root
 │
-├── gwas-phenotype-grouping-launcher.sh            # Main running script; see help for details
+├── gwas-phenotype-grouping-launcher.sh            # Main running script; call --help for details
 ├── genomicc-redcap-grouping.Rproj
 ├── .git
 ├── .gitignore
@@ -139,12 +140,13 @@ genomicc-redcap-grouping/                          # Git repository root
 │   │    
 │   ├── tests/
 │   │   ├── example.csv           # Synthetic profiles file for code/yaml practice
-│   │   └── example-groups.yaml   # Basic yaml; copy yaml code examples in and apply to example.csv to practice
+│   │   ├── example-groups.yaml   # Basic yaml; copy yaml code examples in and apply to example.csv to practice
+│   │   └── README-tests.md       # README describing tests usage
 │   │    
 │   └── yaml-library/                   # The existing finalised yaml library; one file per GWAS phenotype grouping
 │       ├── ...
 │
-└── runs/                                 # Not versioned
+└── runs/                                 # Not versioned/git tracked
     │
     ├── genomicc-redcap-grouping_{phenotype_name}/            # Run dir per phenotype
     │   │
