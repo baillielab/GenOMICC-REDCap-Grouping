@@ -1,0 +1,14 @@
+phenotype_group:
+  - phenotype_column: covid19
+    phenotype_label: covid19
+    case_definitions:
+      - prim_diagnosis_odap: "COVID-19"
+        assays:
+          - assay_type: "ANY"
+            organism:    "ANY"
+            assay_delta: "ANY"
+      - prim_diagnosis_odap: "ANY"
+        assays:
+          - assay_type: "ANY"
+            organism:    "COVID-19"
+            assay_delta: "ANY"

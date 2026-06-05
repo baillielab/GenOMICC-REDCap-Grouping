@@ -1,0 +1,14 @@
+phenotype_group:
+  - phenotype_column: flu
+    phenotype_label: flu
+    case_definitions:
+      - prim_diagnosis_odap: "Influenza"
+        assays:
+          - assay_type: "ANY"
+            organism:    "ANY"
+            assay_delta: "ANY"
+      - prim_diagnosis_odap: "ANY"
+        assays:
+          - assay_type: "ANY"
+            organism:    ["Influenza A", "Influenza B"]
+            assay_delta: "ANY"
