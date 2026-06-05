@@ -379,6 +379,13 @@ if $DO_APPLY; then
 
   echo "Yaml file: $YAML_FILE" >> "$LOG_FILE"
 
+  ### Copy yaml into work/ if it was specified from outside the run directory ====
+  if [ "$(dirname "$YAML_FILE")" != "$WORK_DIR" ]; then
+    cp "$YAML_FILE" "$WORK_DIR/$(basename "$YAML_FILE")"
+    echo -e "${BLUE}Yaml copied to work/: $(basename "$YAML_FILE")${NC}"
+    echo "Yaml copied to work/: $(basename "$YAML_FILE")" >> "$LOG_FILE"
+  fi
+
   ### Copy params csv into work/ as the clean starting point ====
   WORK_INPUT="$WORK_DIR/$(basename "$INPUT_FILE")"
   cp "$PARAMS_RUN_DIR/$(basename "$INPUT_FILE")" "$WORK_INPUT"

@@ -11,6 +11,61 @@ is_any <- function(x) !is.null(x) && length(x) == 1 && !is.na(x) && identical(as
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## validate_case_definitions ####
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Validates all case definitions in a parsed yaml config. Currently enforces:
+#
+#   Rule: if prim_diagnosis_odap is "ANY", at least one assay criterion
+#   (assay_type, organism, or assay_delta) across all assay specs must be
+#   explicitly constrained — i.e. not "ANY", not omitted/NULL/NA. Prevents
+#   completely unconstrained wildcard match across all profiles.
+#
+# Stops with error message if any violation is found.
+validate_case_definitions <- function(config) {
+
+  # Helper: returns TRUE if a single assay spec has at least one constrained field
+  spec_has_constraint <- function(spec) {
+    (!is_any(spec$assay_type)  && !is.null(spec$assay_type)  && !is.na(spec$assay_type[[1]])) ||
+    (!is_any(spec$organism)    && !is.null(spec$organism)    && !is.na(spec$organism[[1]]))    ||
+    (!is_any(spec$assay_delta) && !is.null(spec$assay_delta) && !is.na(spec$assay_delta[[1]]))
+  }
+
+  for (pg in config$phenotype_group) {
+    for (i in seq_along(pg$case_definitions)) {
+      entry <- pg$case_definitions[[i]]
+      diag  <- entry$prim_diagnosis_odap
+
+      if (is_any(diag)) {
+        assays <- entry$assays
+
+        # assays omitted or ~ with ANY diagnosis is also invalid
+        all_unconstrained <- is.null(assays) ||
+          (length(assays) == 1 && is.null(assays[[1]])) ||
+          !any(sapply(assays, function(spec) {
+            if (is.null(spec)) return(FALSE)
+            spec_has_constraint(spec)
+          }))
+
+        if (all_unconstrained) {
+          stop(
+            "Invalid case definition (entry ", i, " in phenotype_column '",
+            pg$phenotype_column, "'): ",
+            "prim_diagnosis_odap: \"ANY\" requires at least one assay criterion ",
+            "(assay_type, organism, or assay_delta) to be explicitly constrained ",
+            "— i.e. not \"ANY\", not omitted, and not NA."
+          )
+        }
+      }
+    }
+  }
+
+  invisible(TRUE)
+}
+
+
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## build_assays ####
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Build a collapsed assay list for a group of rows sharing the same profile
@@ -107,8 +162,13 @@ build_profiles <- function(label_df) {
     pnums_in_group <- sapply(fingerprints[fp_keys == fp], `[[`, "profile_number")
     group_df       <- label_df[label_df$profile_number %in% pnums_in_group, ]
 
+    # Split comma-separated diagnosis strings into a proper vector so that
+    # write_yaml serialises them as a YAML list rather than a scalar string.
+    # Single-value diagnoses are unaffected (a length-1 vector writes as a scalar).
+    diag_vals <- trimws(strsplit(diag_map[[fp]], ",")[[1]])
+
     list(
-      prim_diagnosis_odap = diag_map[[fp]],
+      prim_diagnosis_odap = if (length(diag_vals) == 1) diag_vals else as.list(diag_vals),
       assays              = build_assays(group_df)
     )
   })
@@ -203,9 +263,23 @@ match_assay_row <- function(row, assay_spec) {
 match_profile_entry <- function(profile_rows, entry) {
 
   # Check prim_diagnosis_odap (required)
+  # Supports:
+  #   - scalar YAML value:  prim_diagnosis_odap: "COVID-19"
+  #   - list YAML value:    prim_diagnosis_odap: [COVID-19, flu]
+  # CSV values may be comma-separated (e.g. "COVID-19, SARS") when a free-text
+  # diagnosis maps to more than one clean value. Matching splits those on commas
+  # first, so "COVID-19" matches a CSV value of "COVID-19, SARS" but not "SARS-22".
   diag <- entry$prim_diagnosis_odap
-  if (!is.null(diag) && !is.na(diag)) {
-    if (!any(profile_rows$prim_diagnosis_odap == diag, na.rm = TRUE)) return(FALSE)
+  if (is_any(diag)) {
+    # ANY: require a non-NA diagnosis in the profile; assay matching handles the rest
+    if (all(is.na(profile_rows$prim_diagnosis_odap))) return(FALSE)
+  } else if (!is.null(diag) && !all(is.na(diag))) {
+    diag_vec <- trimws(unlist(diag))  # handles both scalar and list from YAML
+    matched_diag <- any(sapply(profile_rows$prim_diagnosis_odap, function(x) {
+      if (is.na(x)) return(FALSE)
+      any(trimws(strsplit(x, ",")[[1]]) %in% diag_vec)
+    }))
+    if (!matched_diag) return(FALSE)
   }
 
   # If no assays specified (NULL or single ~ entry), require the profile to

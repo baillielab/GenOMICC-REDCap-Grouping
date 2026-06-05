@@ -72,6 +72,9 @@ for (lib in libs_required) {
 profiles <- read_csv(INPUT_FILE, na = c("", "NA"), show_col_types = FALSE)
 config   <- read_yaml(YAML_FILE)
 
+# Validate case definition logic before any matching begins
+validate_case_definitions(config)
+
 # Validate that all expected fixed columns are present
 missing_fixed <- setdiff(FIXED_PROFILE_COLS, names(profiles))
 if (length(missing_fixed) > 0) {
